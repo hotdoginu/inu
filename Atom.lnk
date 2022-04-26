@@ -1,0 +1,1143 @@
+ <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>練習</title>
+
+
+
+
+
+<h4>目次</h4>
+<ul>
+  <li><a href="#hajimeni">はじめに</a></li>
+</ul>
+
+<h4 id="hajimeni">はじめに</h4>
+<p>この文章は...</p>
+<a href="betupage.html#abc">別ページのabcにジャンプ</a>
+<head>
+  <title>タイトル</title>
+  <base href="http://www.yyy.zzz/">
+</head>
+<body>
+<a href="index.html">xxx</a>
+</body>
+<img src="image/map.gif" alt="画像" usemap="#maptest" style="width:243px; height:68px">
+<map name="maptest">
+  <area shape="rect" coords="11,16,63,54" alt="HTML" href="../html/index.htm">
+  <area shape="poly" coords="73,50,159,50,159,24,73,9" alt="javascript" href="../js/index.htm">
+  <area shape="circle" coords="197,32,28" alt="CGI" href="../wwwcgi.htm">
+  <area shape="default" alt="other" href="../www.htm">
+</map>
+
+<ul>
+  <li>Internet Explorer</li>
+  <li>Google Chrome</li>
+</ul>
+
+<ol>
+  <li>Internet Explorer</li>
+  <li>Google Chrome</li>
+ <menu>
+   <li><button onclick="alert('Copy')">Copy</button></li>
+   <li><button onclick="alert('Cut')">Cut</button></li>
+   <li><button onclick="alert('Paste')">Paste</button></li>
+ </menu>
+
+<form method="post" action="cgi/sample.cgi">
+  <div>名前 : <input type="text" name="name"></div>
+  <div>住所 : <input type="text" name="addr"></div>
+  <div>検索 : <input type="search" name="search"></div>
+  <input type="submit" value="送信">
+  <input type="reset" value="取消">
+  <input type="search" value="検索">
+</form>
+
+<form method="post" action="xxx.cgi">
+  <select name="OS">
+    <option value="Win">Windows</option>
+    <option value="Mac">MacOS</option>
+    <option value="OTHER">その他</option>
+  </select>
+</form>
+
+<form method="post" action="xxx.cgi">
+  <select name="browser" size=5 multiple>
+    <option value="ch">Chrome</option>
+    <option value="Fx">Firefox</option>
+    <option value="Op">Opera</option>
+    <option value="IE">Internet Explorer</option>
+  </select>
+  <input type="submit" value="OK">
+</form>
+
+<form method="post" action="sample.cgi">
+  <div>
+    <textarea name="msg" cols=40 rows="=4">
+ここに入力
+    </textarea>
+  </div>
+  <input type="submit" value="送信">
+</form>
+
+<form action="xxx.cgi">
+  <div>
+    <input type="radio" name="Yes_No" id="r1" value="yes" checked>
+    <label accesskey="Y" for="r1">はい(<u>Y</u>)</label>
+    <input type="radio" name="Yes_No" id="r2" value="No">
+    <label accesskey="N" for="r2">いいえ(<u>N</u>)</label>
+  </div>
+  <input type="submit" value="送信">
+</form>
+
+<form onsubmit="return false" oninput="z.value = Number(x.value) + Number(y.value)">
+  <input name="x" type="number" value="2"> +
+  <input name="y" type="number" value="6"> =
+  <output name="z">8</output>
+</form>
+
+<label>
+  好きなスポーツは？
+  <input name="fav_sports" list="sports_list">
+  <datalist id="sports_list">
+    <option value="サッカー">
+    <option value="野球">
+    <option value="ゴルフ">
+  </datalist>
+</label>
+
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>テーブルテスト</title>
+<style>
+.table1 {
+   border: 1px solid gray;
+}
+.table1 th, .table1 td {
+   border: 1px solid gray;
+}
+.table1 th {
+  background-color: #ccf;
+}
+</style>
+</head>
+<body>
+<table1 class="table1">
+  <tr><th></th><th>列-A</th><th>列-B</th></tr>
+  <tr><td>行-1</td><td>A-1</td><td>B-1</td></tr>
+  <tr><td>行-2</td><td>A-2</td><td>B-2</td></tr>
+  <tr><td>行-3</td><td>A-3</td><td>B-3</td></tr>
+</table1>
+</body>
+</html>
+
+
+<table>
+  <caption>【県庁所在地】</caption>
+  <tr><th>県名</th><th>県庁所在地</th></tr>
+  <tr><td>宮城</td><td>仙台</td></tr>
+  <tr><td>愛媛</td><td>松山</td></tr>
+  <tr><td>沖縄</td><td>那覇</td></tr>
+</table>
+
+<head>
+<style>
+table.meibo { border-collapse: collapse; }
+table.meibo th { background-color: #ccccff; }
+table.meibo th,
+table.meibo td { border: 1px solid #666666; }
+</style>
+</head>
+
+<table class="meibo">
+  <colgroup span="1" style="width:50px; background-color:#ccccff;">
+  </colgroup>
+  <colgroup>
+    <col span="1" style="width:100px; background-color:#ffcccc;">
+    <col span="2" style="width:150px; background-color:#ccffcc;">
+  </colgroup>
+  <tr><th>名前</th><th>出身</th><th>A値</th><th>B値</th></tr>
+  <tr><td>田中</td><td>東京</td><td>123</td><td>12.3</td></tr>
+  <tr><td>鈴木</td><td>大阪</td><td>456</td><td>45.6</td></tr>
+  <tr><td>佐藤</td><td>京都</td><td>789</td><td>78.9</td></tr>
+</table>
+<hr style="width:300px; height:10px; background-color:#ff9999;">
+
+<iframe src="a.htm" width=600 height=200></iframe>
+
+
+<head>
+  <title>テスト</title>
+  <style>
+  H5 { color: red }
+  .body { margin-left: 30 }
+  </style>
+</head>
+<body>
+  <h5>webページ作成入門</h5>
+  <p class="body">ホームページは...</p>
+</body>
+
+これを<span style="color:red">ブラウザ</span>と呼びます。
+
+<ruby>
+  <rb>紫陽花</rb>
+  <rt>あじさい</rt>
+</ruby>
+
+<ruby>
+  <rb>山</rb>
+  <rt>やま</rt>
+  <rb>田</rb>
+  <rt>だ</rt>
+  <rb>太</rb>
+  <rt>た</rt>
+  <rb>郎</rb>
+  <rt>ろう</rt>
+</ruby>
+
+<script>
+window.onload = function() {
+  window.setInterval(function() {
+    var o = document.getElementById('prog1');
+    if (o.value == 100) {
+        o.value = 0;
+    } else {
+       o.value += 10;
+    }
+  }, 200);
+};
+</script>
+<progress id="prog1" max=100 value=0></progress>
+
+
+<head>
+<title>テスト</title>
+<style>
+.pretty { color: lime; }
+.cool { font-size: 32px; }
+</style>
+</head>
+<body>
+  <p class="pretty">これはprettyな文章です。</p>
+  <p class="cool">これはcoolな文章です。</p>
+  <p class="cool">これもcoolな文章です。</p>
+</body>
+
+<head>
+  <title>テスト</title>
+  <style>
+  #header { color: blue; }
+  #footer { color: red; }
+  </style>
+</head>
+<body>
+  <div id="header">これはヘッダです。</div>
+  <div id="footer">これはフッタです。</div>
+</body>
+
+<ul id="test-ul">
+  <li>AAA
+    <ul>
+      <li>BBB
+      </ul>
+  <li>CCC
+    <ul>
+    <li>DDD
+    </ul>
+  </ul>
+
+<script>
+document.getElementById("test-ul").querySelectorAll(":scope > li").forEach((e) => {
+   console.log(e);
+});
+</script>
+
+
+<style>
+.f:focus { outline: 2px solid #66f; border-radius: .2rem; }
+.fv:focus-visible { outline: 2px solid #66f; border-radius: .2rem; }
+</style>
+<div>
+  <input class="f" value=":focus">
+  <input class="fv" value=":focus-visible">
+  <button class="f">:focus</button>
+  <button class="fv">:focus-visible</button>
+</div>
+
+<style>
+form { border: 1px solid gray; padding: .3rem; margin-bottom: .3rem; }
+form:focus-within { background-color: #eef; }
+</style>
+<form>
+  <input type="text">
+</form>
+<form>
+  <input type="text">
+</form>
+
+<style>
+button:default{ font-weight: bold; }
+option:default { font-weight: bold; }
+input:default { outline: 3px solid skyblue; }
+</style>
+
+
+<form>
+  <button type="submit">OK</button>
+  <button>Cancel</button>
+  <select>
+    <option selected>Option#1</option>
+    <option>Option#2</option>
+    <option>Option#3</option>
+  </select>
+  <label><input type="checkbox" checked> Checkbox</label>
+  <label><input type="checkbox"> Checkbox</label>
+  <label><input type="radio" name="radio1" checked> Redio</label>
+  <label><input type="radio" name="radio1"> Radio</label>
+</form>
+
+
+<style>
+.main { color: orange }
+</style>
+<div id="headline">
+  <h1>CSS入門</h1>
+  <p>これは段落です。</p>
+</div>
+<div class="main">
+<h2>これは見出しです。</h2>
+<p>これは<span class="light">例</span>です。</p>
+<p><a href="http://hotdog.com/">ホームへ</a>戻ります。</p>
+</div>
+
+<div style="transform:rotate(15deg); width:60px;">こんにちは</div>
+
+<h1>フロリダでは当たり前。</h1>
+<style>
+ h1 { color: rgba(255%, 0%, 0%, 0.2); }
+</style>
+
+
+
+<style>
+.slidein {
+  animation-duration: 10.0s;
+  animation-name: slidein;
+}
+@@keyframes slidein {
+  form {
+    margin-left: 300px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+</style>
+
+<div class="slidein">犬</div>
+
+
+<style>
+.classA {
+ margin: 10px;
+ padding: 10px;
+ border: 1px solid #ff9;
+ background: #cfc;
+}
+.classB {
+ margin: inherit;
+ padding: inherit;
+ border: inherit;
+ background: inherit;
+}
+</style>
+
+<div class="classA">
+ <div class="classB">
+   サンプル
+</div>
+</div>
+
+
+
+<style>
+.parent {
+ color: red;
+ font-weight: bold;
+ font-size: 16pt;
+}
+.childA {
+   all: initial;
+}
+.childB {
+   all: initial;
+   color: unset;
+}
+</style>
+
+<div class="parent">
+  parent
+ <div class="childA">childA</div>
+ <div class="childB">childB</div>
+</div>
+
+
+<style>
+a[href]::after {
+ font-size: 40%;
+ content: "(" attr(href) ")";
+}
+</style>
+
+<a href="http://www.inu-web.com">犬のwww入門</a>
+
+
+
+<h5>none</h5>
+<div>
+  <span style="font:24pt Times; font-size-adjust:none">x-name</span>
+  <span style="font:24pt Arial; font-size-adjust:none">x-name</span>
+</div>
+<h5>font-size-adjust</h5>
+<div>
+  <span style="font:24pt Times; font-size-adjust:0.45">x-name</span>
+  <span style="font:24pt Arial; font-size-adjust:0.45">x-name</span>
+</div>
+
+<style>
+.kern-auto, .kern-none, .kern-normal {
+  font-size: 22pt;
+  font-family: "Times New Roman", "Times";
+  font-weight: bold;
+}
+.kern-auto {
+  font-kerning: auto;
+}
+.kern-none {
+  font-kerning: none;
+}
+.kern-normal {
+  font-kerning: normal;
+}
+</style>
+
+<div class="kern-auto">auto: To Tr We Wo Ya Yo AV</div>
+<div class="kern-none">none: To Tr We Wo Ya Yo AV</div>
+<div class="kern-normal">normal: To Tr Ta We Wo Ya Yo AV</div>
+
+
+
+<style>
+.none {
+  -webkit-font-feature-settings: normal;
+     -moz-font-feature-settings: normal;
+      -ms-font-feature-settings: normal;
+          font-feature-settings: normal;
+}
+.liga {
+  -webkit-font-feature-settings: "liga";
+     -moz-font-feature-settings: "liga";
+      -ms-font-feature-settings: "liga";
+          font-feature-settings: "liga";
+}
+.smcp {
+  -webkit-font-feature-settings: "smcp";
+     -moz-font-feature-settings: "smcp";
+      -ms-font-feature-settings: "smcp";
+          font-feature-settings: "smcp";
+}
+.c2sc {
+  -webkit-font-feature-settings: "c2sc";
+     -moz-font-feature-settings: "c2sc";
+      -ms-font-feature-settings: "c2sc";
+          font-feature-settings: "c2sc";
+}
+</style>
+
+// <b>liga</b>
+<div style="font-family: 'メイリオ'">
+  <div class="none">fi fl などの文字が連結されます。</div>
+  <div class="liga">fi fl などの文字が連結されます。</div>
+</div>
+<br>
+// <b>smcp</b>
+<div class="none">New York 小文字をスモールキャップスで表示します。</div>
+<div class="smcp">New York 小文字をスモールキャップスで表示します。</div>
+<br>
+// <b>c2sc</b>
+<div class="none">Google 大文字をスモールキャップスで表示します。</div>
+<div class="smcp">Google 大文字をスモールキャップスで表示します。</div>
+
+
+<div style="font-family:'メイリオ'; font-size:22pt;">
+  <div style="font-variant-east-asian:jis78;font-size:22pt;">麹町</div>
+  <div style="font-variant-east-asian:jis83;font-size:22pt;">麹町</div>
+</div>
+
+<div style="text-indent:1em">
+春は、あけぼの。やうやう白くなりゆく山ぎは　少し明かりて紫だちたる雲の細くたなびきたる。
+夏は、夜。月の頃はさらなり。闇もなほ。蛍の多く飛び違ひたる。
+</div>
+
+
+<style>
+.sample-normal {
+    line-height: normal;
+    width: 400px;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 1em;
+}
+.sample-200 {
+    line-height: 200%;
+    width: 400px;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-bottom: 1em;
+}
+</style>
+
+<h5>normal</h5>
+<div class="sample-normal">
+この文章は、行の高さに normal を指定しています。
+この文章は、行の高さに normal を指定しています。
+この文章は、行の高さに normal を指定しています。
+</div>
+<h5>200%</h5>
+<div class="sample-200">
+この文章は、行の高さに 200% を指定しています。
+この文章は、行の高さに 200% を指定しています。
+この文章は、行の高さに 200% を指定しています。
+</div>
+
+
+<style>
+.box {
+  padding: .2rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.tab-4 {
+  tab-size: 4;
+}
+.tab-8 {
+  tab-size: 8;
+}
+</style>
+
+<pre class="box tab-4">
+A   A   A   A   A
+</pre>
+<pre class="box tab-8">
+A   A   A   A   A
+</pre>
+
+
+<style>
+.shadow { text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #666633; }
+</style>
+
+<div style="text-shadow: 3px 3px 2px #663333; font:32pt 'Arial; font-weight:bold; color:#660000'">
+World Wide web
+</div>
+
+<div style="text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333; font:32pt 'Arial'; font-weight:bold; color:#660000">
+World Wide web
+</div>
+
+<div style="text-decoration:none">線なし</div>
+<div style="text-decoration:underline">下線</div>
+<div style="text-decoration:overline">上線</div>
+<div style="text-decoration:line-through">打ち消し線</div>
+<div style="text-decoration:underline solid">下線・実線</div>
+<div style="text-decoration:underline double">下線・二重線</div>
+<div style="text-decoration:underline dotted">下線・点線</div>
+<div style="text-decoration:underline dashed">下線・破線</div>
+<div style="text-decoration:underline wavy">下線・波線</div>
+<div style="text-decoration:underline red">下線・赤</div>
+<div style="text-decoration:blink">ブリンク</div>
+
+
+<style>
+.multicol {
+  column-count: 3;
+}
+.multicol p {
+  break-after: column;
+}
+</style>
+
+<div class="multicol">
+  <p>段落1:ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+  <p>段落2:ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+  <p>段落3:あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+</div>
+
+
+
+<ul style="list-style:square">
+  <li>HTML
+  <li>CSS
+  <li>JavaScript
+</ul>
+
+
+<style>
+.sample-table {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  margin: 1em;
+}
+.sample-table td {
+  border: 1px solid gray;
+}
+.sample-top {
+  caption-side: top;
+}
+.sample-bottom {
+  caption-side: bottom;
+}
+</style>
+
+<h5>top</h5>
+<table class="sample-table">
+  <caption class="sample-top">キャプション</caption>
+  <tr><td>AAAAAA</td><td>AAAAAA</td></tr>
+  <tr><td>AAAAAA</td><td>AAAAAA</td></tr>
+</table>
+
+<h5>bottom</h5>
+<table class="sample-table">
+  <caption class="sample-bottom">キャプション</caption>
+  <tr><td>AAAAAA</td><td>AAAAAA</td></tr>
+  <tr><td>AAAAAA</td><td>AAAAAA</td></tr>
+</table>
+
+
+<style>
+.sample-collapse {
+  border-collapse: collapse;
+  border: 1px solid #888;
+  margin: 0em 1em 1em 1em;
+}
+.sample-separate {
+  border-collapse: separate;
+  border: 1px solid #888;
+  margin: 0em 1em 1em 1em;
+}
+.sample-collapse td {
+  border: 1px solid #888;
+  width: 100px;
+}
+.sample-separate td {
+  border: 1px solid #888;
+  width: 100px;
+}
+</style>
+
+<h5>collapse</h5>
+<table class="sample-collapse">
+  <tr><td>AAA</td><td>BBB</td></tr>
+  <tr><td>CCC</td><td>DDD</td></tr>
+</table>
+
+<h5>separate</h5>
+<table class="sample-separate">
+  <tr><td>AAA</td><td>BBB</td></tr>
+  <tr><td>CCC</td><td>DDD</td></tr>
+</table>
+
+
+<style>
+.sample-separate {
+  border-collapse: separate;
+  border-spacing: 50px 10px;
+  border: 1px solid gray;
+  margin: 1em;
+}
+.sample-separate td {
+  border: 1px solid gray;
+  background-color: #ff9999;
+  width: 100px;
+}
+</style>
+
+<table class="sample-separate">
+  <tr><td>AAA</td><td>BBB</td></tr>
+  <tr><td>CCC</td><td>DDD</td></tr>
+</table>
+
+
+<style>
+q { quotes: "「" "」" "『""』"; }
+q:before { content: open-quote; }
+q:after { content: close-quote; }
+</style>
+
+<p><q><q>少年よ大志を抱け</q>って誰の言葉だっけ?</q>と彼が聞いてきた。</p>
+
+
+<style>
+.sample-new::after {
+  content: "New!";
+  color: red;
+  font-size: x-small;
+  vertical-align: text-top;
+  font-weight: bold;
+  margin-left: 3px;
+}
+a.sample-hover-link[herf^="http:"]:hover::after {
+  content: "("attr(href)")";
+}
+@media  print {
+  a.sample-print-link::after {
+    content: "("attr(href)")";
+    font-size: x-small;
+  }
+}
+</style>
+
+
+<div class="sample-new">新着コンテンツです</div>
+<div>マウスを乗せるとURLを表示します: <a class="sample-hover-link" href="http://www.yahoo.co.jp/">Yahoo!</a></div>
+<div>印刷時のみURLが印刷されます: <a class="sample-print-link" href="http://www.yahoo.co.jp/">Yahoo!</a></div>
+
+
+<style>
+.back {
+  background-color: : #9f9;
+}
+.elem {
+  font-weight: bold;
+  font-size: 16pt;
+  color: #00f;
+  mix-blend-mode: darken;
+}
+</style>
+
+<div class="back">
+  <div class="elem">MIX-BLEND MODE</div>
+</div>
+
+
+
+<style>
+.sample {
+  position: absolute;
+  padding: 2px;
+  width: 80px;
+  border: 1px solid #666666;
+}
+</style>
+
+<div  style="position:relative; height:160px">
+  <div class="sample" style="z-index:2; top:40px; left:20px; background:#ff9999">A</div>
+  <div class="sample" style="z-index:3; top:60px; left:40px; background:#99ff">B</div>
+  <div class="sample" style="z-index:1; top:20px; left:60px; background:#99ff99">C</div>
+</div>
+
+
+
+<style>
+select {
+  margin-bottom: .3rem;
+  width: 20rem;
+  height: 2rem;
+  padding: .2rem;
+}
+.my-select {
+  position: relative;
+  height: 2rem;
+}
+.my-select select {
+  position: absolute;
+  appearance: none;
+}
+.my-select span {
+  position: absolute;
+  top: 0.3rem;
+  left: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+</style>
+
+
+<div>
+  <select>
+    <option>通常のセレクトボックス</option>
+    <option>...</option>
+  </select>
+</div>
+<div class="my-select">
+  <select>
+    <option>カスタマイズしたセレクトボックス</option>
+    <option>...</option>
+  </select>
+  <span>&#8681;</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.resizable {
+  width: 20rem;
+  height: 4rem;
+  resize: both;
+  overflow: hidden;
+  background-color: #cff;
+  border: 1px solid #ccc;
+}
+</style>
+
+<div class="resizable">
+  フロリダ
+</div>
+
+
+
+<style>
+.test3 {
+  background-position: center top;
+  background-image:
+  url(./dog/b07a0034.jpg);
+background-repeat:
+  no-repeat,
+  repeat;
+filter: drop-shadow(5px 5px 2px #333333);
+width: 500px;
+height: 500px;
+border: 1px solid gray;
+}
+</style>
+
+<div class="test3">犬</div>
+
+
+
+<style>
+.sample-solid {
+  border: 1px solid gray;
+  width: 80px;
+  height: 40px;
+  margin: 0em 0em 0em 1em;
+}
+.sample-dashed {
+  border: 1px dashed gray;
+  width: 80px;
+  height: 40px;
+  margin: 0em 0em 0em 1em;
+}
+.sample-dotted {
+  border: 1px dotted gray;
+  width: 80px;
+  height: 40px;
+  margin: 0em 0em 0em 1em;
+}
+.sample-10 {
+  border: 10px solid #339933;
+  width: 80px;
+  height: 40px;
+  margin: 0em 0em 0em 1em;
+}
+</style>
+
+<h5>1px solid</h5>
+<div class="sample-solid"></div>
+<h5>1px dashed</h5>
+<div class="sample-dashed"></div>
+<h5>1px dotted</h5>
+<div class="sample-dotted"></div>
+<h5>10px solid</h5>
+<div class="sample-10"></div>
+
+
+
+
+<style>
+.sample-none {
+  box-shadow: 20px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 8px solid #cc66ff;
+  background-color: #ffcccc;
+  margin: 0em 0em 1em 1em;
+}
+.sample-simple {
+  box-shadow: 5px 5px 10px 0px #333333;
+  height: 20px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 8px solid #cc66ff;
+  background-color: #ffcccc;
+  margin: 0em 0em 1em 1em;
+}
+.sample-multiple {
+  box-shadow: 5px 5px 10px 0px #333333, 5px 5px 10px 0px #333333 inset;
+  height: 20px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 8px solid #cc66ff;
+  background-color: #ffcccc;
+  margin: 0em 0em 1em 1em;
+}
+</style>
+
+<h5>sample-none</h5>
+<div class="sample-none"></div>
+<h5>sample-simple</h5>
+<div class="sample-simple"></div>
+<h5>sample-multiple</h5>
+<div class="sample-multiple"></div>
+
+
+<style>
+.sample:focus {
+  outline: 3px solid #00bfff;
+}
+</style>
+
+<div>項目１：<input type="text" class="sample" id="item1"></div>
+<div>項目２：<input type="text" class="sample" id="item2"></div>
+<div>項目３：<input type="text" class="sample" id="item3"></div>
+
+
+<style>
+@keyframes bframe {
+  from {
+    color: #66f;
+    font-size: 20pt;
+  }
+  to {
+    color: #f66;
+    font-size: 24px;
+  }
+}
+.inu {
+  position: absolute;
+  animation: bframe 0.5s ease-in 1s infinite alternate both;
+}
+</style>
+
+<div class="inu">犬</div>
+
+
+
+
+
+
+
+
+<style>
+@keyframes aframe {
+  from {
+    width: 0px;
+  }
+  80% {
+    width: 500px;
+  }
+  to {
+    width: 500px;
+  }
+}
+.atf {
+  height: 20px;
+  margin: 5px;
+  padding: 2px;
+  background: #cff;
+  white-space: nowrap;
+  font-weight: bold;
+  animation: aframe 5s infinite both;
+}
+.atf-linear { animation-timing-function: linear; }
+.atf-ease { animation-timing-function: ease; }
+.atf-ease-in { animation-timing-function: ease-in; }
+.atf-ease-out { animation-timing-function: ease-out; }
+.atf-ease-in-out { animation-timing-function: ease-in-out; }
+.atf-step-start { animation-timing-function: step-start; }
+.atf-step-end { animation-timing-function: step-end; }
+.atf-steps { animation-timing-function: steps(3, start); }
+.atf-cubic-bezir { animation-timing-function: cubic-bezier(0.1, 2.3, 0.3, 0.3); }
+</style>
+
+<div class="atf atf-linear">linear</div>
+<div class="atf atf-ease">ease</div>
+<div class="atf atf-ease-in">ease-in</div>
+<div class="atf atf-ease-out">ease-out</div>
+<div class="atf atf-ease-in-out">ease-in-out</div>
+<div class="atf atf-step-start">step-start</div>
+<div class="atf atf-step-end">step-end</div>
+<div class="atf atf-steps">steps</div>
+<div class="atf atf-cubic-bezier">cubic-bezier</div>
+
+
+
+<style>
+@keyframes myframe {
+  from {
+    color: #6ff;
+    font-size: 20px;
+  }
+  to {
+    color: #f66;
+    font-size: 24px;
+  }
+}
+.test0 {
+  position: absolute;
+  animation-name: myframe;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+</style>
+
+<div>
+  <input type="button" value="Start" onclick="document.getElementById('a1').style.animationPlayState='running'">
+  <input type="button" value="Stop" onclick="document.getElementById('a1').style.animationPlayState='paused'">
+</div>
+<div id ="a1" class="test0">Dog</div>
+
+
+<style>
+.cube-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  perspective: 1000px;
+}
+.cube {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  transform-style: preserve-3d;
+  animation: roll-over 1s linear infinite;
+}
+.cube .side {
+  position: absolute;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #666;
+  text-align: center;
+  font-size: 20px;
+}
+.side1 { background: #f66; transform: rotateY(0deg) translateZ(20px); }
+.side2 { background: #6f6; transform: rotateY(180deg) translateZ(20px); }
+.side3 { background: #66f; transform: rotateY(90deg) translateZ(20px); }
+.side4 { background: #6ff; transform: rotateY(－90deg) translateZ(20px); }
+.side5 { background: #f6f; transform: rotateX(90deg) translateZ(20px); }
+.side6 { background: #ff6; transform: rotateX(－90deg) translateZ(20px); }
+@keyframes roll-over {
+  from { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+</style>
+
+<div class="cube-container">
+  <div class="cube">
+   <div class="side side1">1</div>
+   <div class="side side2">2</div>
+   <div class="side side3">3</div>
+   <div class="side side4">4</div>
+   <div class="side side5">5</div>
+   <div class="side side6">6</div>
+ </div>
+</div>
+
+<style>
+.multicol {
+  columns: 3;
+}
+.multicol h3 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+  background-color: #cff;
+}
+</style>
+
+<div class="multicol">
+  <h3>タイトル</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
